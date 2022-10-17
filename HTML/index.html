@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- Awesome Fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+        <nav>
+            <div class="logo">Health<span>Gate</span></div>
+            <div class="open"><i class="fas fa-bars"></i></div>
+            <ul class="links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="trainers.html">trainers</a></li>
+                <li><a href="plan.html">plan</a></li>
+                <li><a href="register.html">register</a></li>
+                <div class="close"><i class="fas fa-times"></i></div>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1> Health Gate gym</h1>
+            <button class="btn"><a href="register.html" style="color: orange;">get started</a></button>
+        </div>
+    </header>
+      <!-- Start Home -->
+      <section class="home" id="home">
+          <h1>Health Gate gym is committed to offer fitness services to help people lead healthy lifestyles.</h1>
+          <div class="articles">
+        <div class="row">
+            <div class="image">
+                <img style="background-color: black;" src="../images/rate.png">
+            </div>
+            <div class="content">
+                <h3>PROUD TO BE THE FIRST FITNESS BRAND WITH THE WELL HEALTH-SAFETY RATING</h3>
+                <p>Gym confidently in our Well Health Safety Rated clubs You’ll soon find a Well Health Safety Seal on the front door of every Health Gate gym. Backed by science and evaluated by third-party experts, this seal means you can run, curl, lift, squat, press, walk and gym confidently in the Health Gate Gym</p>
+    
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img style="background-color: black;" src="../images/motivation.png">
+            </div>
+            <div class="content">
+                <h3>WHY HEALTH GATE</h3>
+                <p>We create an environment where you can relax, go at your own pace, and do your own thing without ever having to worry about being judged.</p>
+    
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img style="background-color: black;" src="../images/believe.jpg">
+            </div>
+            <div class="content">
+                <h3>OUR GOAL</h3>
+                <p>We believe in providing a high-quality fitness experience at an affordable cost. Read more about our membership plans to decide which one works best for you.</p>
+    
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Start Footer -->
+    <footer>
+        created by &copy; student all rights reserved 2021
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript Section -->
+    <script>
+        var mainMenu = document.querySelector('.links')
+        var openMenu = document.querySelector('.open')
+        var closeMenu = document.querySelector('.close')
+
+        openMenu.addEventListener('click', show)
+        closeMenu.addEventListener('click', close)
+
+        function show(){
+            mainMenu.style.display = 'flex'
+            mainMenu.style.right = '0'
+        }
+        function close(){
+            mainMenu.style.right = '-60%'
+        }
+    </script>
+</body>
+</html>
